@@ -29,14 +29,14 @@ func TestRead(t *testing.T) {
 		t.Fatalf("Number of channels is invalid: %d", fmt.NumChannels)
 	}
 
-	// TODO
-	//	if fmt.SampleRate != 44100 {
-	//		t.Fatalf("Sample rate is invalid: %d", fmt.SampleRate)
-	//	}
+	sampleRate := fmt.SampleRate.LongValue()
+	if sampleRate != 44100 {
+		t.Fatalf("Sample rate is invalid: %d", sampleRate)
+	}
 
-	//	if fmt.SampleRate != 44100*4 {
-	//		t.Fatalf("Byte rate is invalid: %d", fmt.ByteRate)
-	//	}
+	//if sampleRate != 44100*4 {
+	//t.Fatalf("Byte rate is invalid: %d", fmt.ByteRate)
+	//}
 
 	//	if int(fmt.BlockAlign) != blockAlign {
 	//		t.Fatalf("Block align is invalid: %d", fmt.BlockAlign)

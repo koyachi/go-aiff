@@ -9,8 +9,7 @@ type AIFFFormat struct {
 	NumChannels     uint16
 	NumSampleFrames uint32
 	SampleSize      uint16
-	SampleRate      [10]byte
-	//SampleRate IEEE754Float
+	SampleRate      IEEE754Float80bit
 }
 
 type AIFFData struct {
