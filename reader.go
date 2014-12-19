@@ -118,7 +118,7 @@ func (r *Reader) ReadSamples(params ...uint32) (samples []Sample, err error) {
 				}
 			}
 
-			offset += sampleSize * numChannels
+			offset += sampleSize / 8 * numChannels
 		}
 		buffered += n
 	}

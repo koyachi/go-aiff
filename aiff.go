@@ -21,7 +21,5 @@ type AIFFData struct {
 }
 
 type Sample struct {
-	Offset    uint16
-	BlockSize uint16
-	Values    [2]int
+	Values [2]int
 }
